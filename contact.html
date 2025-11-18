@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jadula Trading Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with my public key
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY_HERE"); // This will be replaced
+        })();
+    </script>
+</head>
+<body class="bg-primary text-off-white font-body">
+    <div id="app-container">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center h-20">
+                    <a href="index.html" class="text-2xl font-heading font-bold tracking-wider">JADULA <span class="text-secondary">TRADING</span></a>
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Home</a>
+                        <a href="about.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">About Us</a>
+                        <a href="products.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Products</a>
+                        <a href="services.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Services</a>
+                        <a href="gallery.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Gallery</a>
+                        <a href="contact.html" class="font-semibold text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Contact</a>
+                    </nav>
+                    <a href="contact.html" class="hidden md:inline-block cta-button-outline text-sm font-bold font-heading py-2 px-5 rounded-md uppercase transition-all duration-300">Get a Quote</a>
+                    <button id="mobile-menu-button" class="md:hidden text-off-white"><i data-lucide="menu" class="w-7 h-7"></i></button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-primary-dark">
+                <nav class="flex flex-col items-center space-y-4 py-4">
+                    <a href="index.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Home</a>
+                    <a href="about.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">About Us</a>
+                    <a href="products.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Products</a>
+                    <a href="services.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Services</a>
+                    <a href="gallery.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Gallery</a>
+                    <a href="contact.html" class="font-semibold text-secondary transition-colors duration-300 uppercase text-lg">Contact</a>
+                    <a href="contact.html" class="mt-4 cta-button bg-secondary text-primary font-bold font-heading py-3 px-8 rounded-md text-lg uppercase">Get a Quote</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="min-h-screen">
+            <!-- Hero Section -->
+            <section class="py-24 bg-primary-dark pt-20">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold">Get In Touch</h1>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">We're here to help with your inquiries, quotes, and technical questions</p>
+                    <div class="h-1 w-24 bg-secondary mx-auto mt-4"></div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="py-20 bg-primary">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <!-- Contact Information -->
+                        <div class="lg:col-span-1 space-y-8">
+                            <div class="bg-primary-dark p-6 rounded-lg tech-glow-blue">
+                                <h3 class="text-2xl font-heading font-bold flex items-center mb-4">
+                                    <i data-lucide="mail" class="w-6 h-6 mr-3 text-secondary"></i> 
+                                    Email Us
+                                </h3>
+                                <a href="mailto:info.jadula@gmail.com" class="text-gray-300 hover:text-secondary transition text-lg">
+                                    info.jadula@gmail.com
+                                </a>
+                                <p class="text-gray-400 text-sm mt-2">We typically respond within 2 hours during business days</p>
+                            </div>
+
+                            <div class="bg-primary-dark p-6 rounded-lg tech-glow-blue">
+                                <h3 class="text-2xl font-heading font-bold flex items-center mb-4">
+                                    <i data-lucide="phone" class="w-6 h-6 mr-3 text-secondary"></i> 
+                                    Call or WhatsApp
+                                </h3>
+                                <a href="tel:+27728468865" class="text-gray-300 hover:text-secondary transition text-lg">
+                                    +27 72 846 8865
+                                </a>
+                                <p class="text-gray-400 text-sm mt-2">Available for urgent inquiries and emergency orders</p>
+                            </div>
+
+                            <div class="bg-primary-dark p-6 rounded-lg tech-glow-blue">
+                                <h3 class="text-2xl font-heading font-bold flex items-center mb-4">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3 text-secondary"></i> 
+                                    Our Locations
+                                </h3>
+                                <div class="space-y-3 text-gray-300">
+                                    <div class="flex items-start">
+                                        <i data-lucide="building" class="w-4 h-4 mr-2 mt-1 text-secondary flex-shrink-0"></i>
+                                        <div>
+                                            <p class="font-semibold">Head Office</p>
+                                            <p>Duncan Street, Witbank 1035</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="warehouse" class="w-4 h-4 mr-2 mt-1 text-secondary flex-shrink-0"></i>
+                                        <div>
+                                            <p class="font-semibold">Mpumalanga Branch</p>
+                                            <p>Ext 11, Barberton 1300</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="factory" class="w-4 h-4 mr-2 mt-1 text-secondary flex-shrink-0"></i>
+                                        <div>
+                                            <p class="font-semibold">Gauteng Distribution</p>
+                                            <p>Chappel Street, Alliance Ext 1, Ekurhuleni 1559</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="ship" class="w-4 h-4 mr-2 mt-1 text-secondary flex-shrink-0"></i>
+                                        <div>
+                                            <p class="font-semibold">Western Cape Office</p>
+                                            <p>Michelle Ave, Mandalay, Mitchells Plain, Cape Town 7785</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-primary-dark p-6 rounded-lg tech-glow-blue">
+                                <h3 class="text-2xl font-heading font-bold flex items-center mb-4">
+                                    <i data-lucide="clock" class="w-6 h-6 mr-3 text-secondary"></i> 
+                                    Business Hours
+                                </h3>
+                                <div class="space-y-2 text-gray-300">
+                                    <div class="flex justify-between">
+                                        <span>Monday - Friday</span>
+                                        <span class="text-secondary">8:00 AM - 5:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Saturday</span>
+                                        <span class="text-secondary">9:00 AM - 1:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Sunday</span>
+                                        <span class="text-red-400">Closed</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-3">Emergency support available 24/7 for critical situations</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="lg:col-span-2 bg-primary-dark p-8 rounded-lg tech-glow-blue">
+                            <h2 class="text-3xl font-heading font-bold mb-2">Send us a Message</h2>
+                            <p class="text-gray-400 mb-6">Get a personalized quote or ask us any questions about our products and services</p>
+                            
+                            <div id="form-message" class="hidden p-4 mb-6 rounded-lg"></div>
+                            
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
+                                        <input type="text" name="name" id="name" class="form-input" placeholder="Enter your full name" required>
+                                    </div>
+                                    <div>
+                                        <label for="company" class="block text-sm font-medium text-gray-300 mb-2">Company</label>
+                                        <input type="text" name="company" id="company" class="form-input" placeholder="Your company name">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address *</label>
+                                        <input type="email" name="email" id="email" class="form-input" placeholder="your.email@company.com" required>
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
+                                        <input type="tel" name="phone" id="phone" class="form-input" placeholder="+27 XX XXX XXXX">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject *</label>
+                                    <select name="subject" id="subject" class="form-input" required>
+                                        <option value="">Select inquiry type</option>
+                                        <option value="quote">Request a Quote</option>
+                                        <option value="product-info">Product Information</option>
+                                        <option value="technical-support">Technical Support</option>
+                                        <option value="partnership">Partnership Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="product-interest" class="block text-sm font-medium text-gray-300 mb-2">Product Interest</label>
+                                    <select name="product_interest" id="product-interest" class="form-input">
+                                        <option value="">Select product category</option>
+                                        <option value="mining-supplies">General Mining Supplies</option>
+                                        <option value="conveyor-systems">Conveyor Systems</option>
+                                        <option value="industrial-hoses">Industrial Hoses</option>
+                                        <option value="safety-equipment">Safety Equipment</option>
+                                        <option value="power-tools">Power Tools</option>
+                                        <option value="generators">Generators & Power Equipment</option>
+                                        <option value="multiple">Multiple Categories</option>
+                                        <option value="custom">Custom Requirements</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Your Inquiry *</label>
+                                    <textarea name="message" id="message" rows="6" class="form-input" placeholder="Please provide details about your requirements, including any specific products, quantities, or technical specifications..." required></textarea>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" name="newsletter" id="newsletter" class="w-4 h-4 text-secondary bg-gray-700 border-gray-600 rounded focus:ring-secondary focus:ring-2">
+                                    <label for="newsletter" class="ml-2 text-sm text-gray-300">
+                                        Subscribe to our newsletter for industry updates and special offers
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="w-full cta-button bg-secondary text-primary font-bold font-heading py-4 px-8 rounded-md text-lg uppercase hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                                        Send Message & Get Quote
+                                    </button>
+                                </div>
+
+                                <p class="text-center text-gray-400 text-sm">
+                                    We respect your privacy and will never share your information with third parties.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Emergency Support -->
+            <section class="py-16 bg-primary-dark">
+                <div class="container mx-auto px-4 text-center">
+                    <div class="max-w-4xl mx-auto bg-gradient-to-r from-red-900 to-red-700 p-8 rounded-lg tech-glow-blue">
+                        <i data-lucide="alert-triangle" class="w-16 h-16 text-yellow-400 mx-auto mb-4"></i>
+                        <h2 class="text-3xl font-heading font-bold mb-4">24/7 Emergency Support</h2>
+                        <p class="text-gray-300 text-lg mb-6">
+                            For urgent equipment failures or critical supply requirements outside business hours, 
+                            our emergency support team is available to assist you.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="tel:+27728468865" class="cta-button bg-yellow-400 text-red-900 font-bold font-heading py-3 px-8 rounded-md text-lg uppercase hover:bg-yellow-300 transition-all duration-300">
+                                <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
+                                Emergency Call Now
+                            </a>
+                            <a href="https://wa.me/27728468865" class="cta-button-outline border-green-500 text-green-400 font-bold font-heading py-3 px-8 rounded-md text-lg uppercase hover:bg-green-500 hover:text-white transition-all duration-300">
+                                <i data-lucide="message-circle" class="w-5 h-5 inline mr-2"></i>
+                                WhatsApp Emergency
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Areas -->
+            <section class="py-20 bg-primary">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-heading font-bold">Areas We Serve</h2>
+                        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Providing industrial solutions across South Africa</p>
+                        <div class="h-1 w-24 bg-secondary mx-auto mt-4"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center p-6 bg-primary-dark rounded-lg tech-glow-blue">
+                            <i data-lucide="map-pin" class="w-12 h-12 text-secondary mx-auto mb-4"></i>
+                            <h3 class="font-heading font-bold text-lg mb-2">Gauteng</h3>
+                            <p class="text-gray-400 text-sm">Johannesburg, Pretoria, Ekurhuleni, and surrounding industrial areas</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-dark rounded-lg tech-glow-blue">
+                            <i data-lucide="map-pin" class="w-12 h-12 text-secondary mx-auto mb-4"></i>
+                            <h3 class="font-heading font-bold text-lg mb-2">Mpumalanga</h3>
+                            <p class="text-gray-400 text-sm">Witbank, Middelburg, Secunda, and mining regions</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-dark rounded-lg tech-glow-blue">
+                            <i data-lucide="map-pin" class="w-12 h-12 text-secondary mx-auto mb-4"></i>
+                            <h3 class="font-heading font-bold text-lg mb-2">Limpopo</h3>
+                            <p class="text-gray-400 text-sm">Polokwane, mining operations and industrial centers</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-dark rounded-lg tech-glow-blue">
+                            <i data-lucide="map-pin" class="w-12 h-12 text-secondary mx-auto mb-4"></i>
+                            <h3 class="font-heading font-bold text-lg mb-2">Western Cape</h3>
+                            <p class="text-gray-400 text-sm">Cape Town and surrounding industrial zones</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-primary-dark border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-400">
+                    <div class="md:col-span-1">
+                        <h3 class="text-xl font-heading font-bold text-off-white mb-4">JADULA TRADING</h3>
+                        <p class="text-sm">Sourcing quality parts to keep your operations running safely and efficiently.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="hover:text-secondary transition">Home</a></li>
+                            <li><a href="about.html" class="hover:text-secondary transition">About Us</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Products</a></li>
+                            <li><a href="services.html" class="hover:text-secondary transition">Services</a></li>
+                            <li><a href="gallery.html" class="hover:text-secondary transition">Gallery</a></li>
+                            <li><a href="contact.html" class="hover:text-secondary transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Categories</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="products.html" class="hover:text-secondary transition">General Mining Supplies</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Conveyor Belts</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Industrial Hoses</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Safety Equipment</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Contact</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>Multiple Locations Across South Africa</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="phone" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>+27 72 846 8865</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="mail" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>info.jadula@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+                    <p>&copy; 2025 Jadula Trading Enterprise. All Rights Reserved.</p>
+                    <p class="mt-2">
+                        <a href="#" class="hover:text-secondary transition">Privacy Policy</a> | 
+                        <a href="#" class="hover:text-secondary transition">Terms & Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission with EmailJS fallback to regular mailto
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const company = formData.get('company');
+            const phone = formData.get('phone');
+            const subject = formData.get('subject');
+            const productInterest = formData.get('product_interest');
+            const message = formData.get('message');
+            const newsletter = formData.get('newsletter') ? 'Yes' : 'No';
+            
+            // Create email body
+            const emailBody = `
+Name: ${name}
+Email: ${email}
+Company: ${company}
+Phone: ${phone}
+Subject: ${subject}
+Product Interest: ${productInterest}
+Newsletter: ${newsletter}
+
+Message:
+${message}
+            `.trim();
+            
+            // Use mailto as fallback - this will open user's email client
+            const mailtoLink = `mailto:info.jadula@gmail.com?subject=Contact Form: ${subject}&body=${encodeURIComponent(emailBody)}`;
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.className = 'bg-green-900 text-green-300 p-4 mb-6 rounded-lg';
+            messageDiv.innerHTML = 'Thank you! Your message is being prepared. Please check your email client to send it.';
+            messageDiv.classList.remove('hidden');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

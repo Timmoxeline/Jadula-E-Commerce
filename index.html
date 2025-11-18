@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadula Trading Enterprise - Industrial & Mining Supplies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primary text-off-white font-body">
+    <div id="app-container">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center h-20">
+                    <a href="index.html" class="text-2xl font-heading font-bold tracking-wider">JADULA <span class="text-secondary">TRADING</span></a>
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="font-semibold text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Home</a>
+                        <a href="about.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">About Us</a>
+                        <a href="products.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Products</a>
+                        <a href="services.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Services</a>
+                        <a href="gallery.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Gallery</a>
+                        <a href="contact.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-sm tracking-wider">Contact</a>
+                    </nav>
+                    <a href="contact.html" class="hidden md:inline-block cta-button-outline text-sm font-bold font-heading py-2 px-5 rounded-md uppercase transition-all duration-300">Get a Quote</a>
+                    <button id="mobile-menu-button" class="md:hidden text-off-white"><i data-lucide="menu" class="w-7 h-7"></i></button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-primary-dark">
+                <nav class="flex flex-col items-center space-y-4 py-4">
+                    <a href="index.html" class="font-semibold text-secondary transition-colors duration-300 uppercase text-lg">Home</a>
+                    <a href="about.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">About Us</a>
+                    <a href="products.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Products</a>
+                    <a href="services.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Services</a>
+                    <a href="gallery.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Gallery</a>
+                    <a href="contact.html" class="font-semibold text-gray-300 hover:text-secondary transition-colors duration-300 uppercase text-lg">Contact</a>
+                    <a href="contact.html" class="mt-4 cta-button bg-secondary text-primary font-bold font-heading py-3 px-8 rounded-md text-lg uppercase">Get a Quote</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="min-h-screen">
+            <!-- Hero Section -->
+            <section class="relative h-[70vh] md:h-[90vh] flex items-center justify-center text-center overflow-hidden pt-20">
+                <div class="absolute inset-0 bg-black/50 z-10"></div>
+                <img src="assets/images/hero-bg.jpg" alt="High-Tech Industrial Machinery" class="absolute inset-0 w-full h-full object-cover animate-pan">
+                <div class="relative z-20 container mx-auto px-4 text-white">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold uppercase tracking-wider mb-4">Jadula Trading</h1>
+                    <p class="max-w-3xl mx-auto text-lg md:text-2xl text-gray-300 mb-8">Sourcing quality parts to keep your operations running safely and efficiently.</p>
+                    <a href="products.html" class="cta-button inline-block bg-secondary text-primary font-bold font-heading py-3 px-8 rounded-md text-lg uppercase hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                        Explore Products
+                    </a>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="py-20 bg-primary-dark">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-heading font-bold">Our Core Services</h2>
+                        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Providing comprehensive support for your industrial needs.</p>
+                        <div class="h-1 w-24 bg-secondary mx-auto mt-4"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-primary-dark p-8 rounded-lg text-center transform transition duration-300 hover:-translate-y-2 tech-glow-blue">
+                            <div class="inline-block text-secondary bg-primary p-4 rounded-full mb-4">
+                                <i data-lucide="shield-check" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold mb-2">Trusted Quality</h3>
+                            <p class="text-gray-400">We source from reputable brands and run checks to ensure consistency, safety, and compliance with industry standards.</p>
+                        </div>
+                        <div class="bg-primary-dark p-8 rounded-lg text-center transform transition duration-300 hover:-translate-y-2 tech-glow-blue">
+                            <div class="inline-block text-secondary bg-primary p-4 rounded-full mb-4">
+                                <i data-lucide="truck" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold mb-2">Rapid Fulfilment</h3>
+                            <p class="text-gray-400">Streamlined procurement and logistics help reduce downtime and get what you need on site fast.</p>
+                        </div>
+                        <div class="bg-primary-dark p-8 rounded-lg text-center transform transition duration-300 hover:-translate-y-2 tech-glow-blue">
+                            <div class="inline-block text-secondary bg-primary p-4 rounded-full mb-4">
+                                <i data-lucide="wrench" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold mb-2">Technical Support</h3>
+                            <p class="text-gray-400">Specification guidance and product matching ensures you get the right part for the job.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Categories -->
+            <section class="py-20 bg-primary">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-heading font-bold">Product Categories</h2>
+                        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">High-performance components for demanding environments.</p>
+                        <div class="h-1 w-24 bg-secondary mx-auto mt-4"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="products.html" class="category-card block bg-primary-dark rounded-lg overflow-hidden group tech-glow-blue border border-transparent hover:border-accent-blue">
+                            <div class="relative h-64">
+                                <img src="assets/images/categories/general-mining.jpg" alt="General Mining Supplies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="text-2xl font-heading font-bold text-white">General Mining Supplies</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-400 mb-4">Essential supplies for everyday mining operations, ensuring safety and efficiency.</p>
+                                <span class="font-bold text-secondary flex items-center">View Products <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></span>
+                            </div>
+                        </a>
+                        <a href="products.html" class="category-card block bg-primary-dark rounded-lg overflow-hidden group tech-glow-blue border border-transparent hover:border-accent-blue">
+                            <div class="relative h-64">
+                                <img src="assets/images/categories/conveyor-belts.jpg" alt="Conveyor Belts" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="text-2xl font-heading font-bold text-white">Conveyor Belts</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-400 mb-4">Durable and reliable conveyor belts for material transport in any industrial setting.</p>
+                                <span class="font-bold text-secondary flex items-center">View Products <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></span>
+                            </div>
+                        </a>
+                        <a href="products.html" class="category-card block bg-primary-dark rounded-lg overflow-hidden group tech-glow-blue border border-transparent hover:border-accent-blue">
+                            <div class="relative h-64">
+                                <img src="assets/images/categories/industrial-hoses.jpg" alt="Industrial Hoses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="text-2xl font-heading font-bold text-white">Industrial Hoses</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-400 mb-4">High-pressure, heavy-duty hoses for a wide range of fluid and material transfer applications.</p>
+                                <span class="font-bold text-secondary flex items-center">View Products <i data-lucide="arrow-right" class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Preview -->
+            <section class="py-20 bg-primary-dark">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-3xl md:text-4xl font-heading font-bold">Your Partner in Industrial Supply</h2>
+                            <div class="h-1 w-24 bg-secondary mt-4 mb-6 mx-auto lg:mx-0"></div>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-8">From underground mining to heavy industry, Jadula Trading Enterprise sources, stocks, and supplies quality parts and consumables. We partner with leading manufacturers to keep your operations running safely and efficiently.</p>
+                            <a href="about.html" class="cta-button-outline inline-block font-bold font-heading py-3 px-8 rounded-md text-lg uppercase transition-all duration-300">
+                                Learn More About Us
+                            </a>
+                        </div>
+                        <div class="relative h-80 rounded-lg overflow-hidden tech-glow-blue">
+                            <img src="assets/images/about-industrial.jpg" alt="Industrial environment" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/40"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-primary-dark border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-400">
+                    <div class="md:col-span-1">
+                        <h3 class="text-xl font-heading font-bold text-off-white mb-4">JADULA TRADING</h3>
+                        <p class="text-sm">Sourcing quality parts to keep your operations running safely and efficiently.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="hover:text-secondary transition">Home</a></li>
+                            <li><a href="about.html" class="hover:text-secondary transition">About Us</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Products</a></li>
+                            <li><a href="services.html" class="hover:text-secondary transition">Services</a></li>
+                            <li><a href="gallery.html" class="hover:text-secondary transition">Gallery</a></li>
+                            <li><a href="contact.html" class="hover:text-secondary transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Categories</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="products.html" class="hover:text-secondary transition">General Mining Supplies</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Conveyor Belts</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Industrial Hoses</a></li>
+                            <li><a href="products.html" class="hover:text-secondary transition">Safety Equipment</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-off-white mb-4">Contact</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>Multiple Locations Across South Africa</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="phone" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>+27 72 846 8865</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="mail" class="w-4 h-4 mr-2 mt-1 flex-shrink-0 text-secondary"></i>
+                                <span>info.jadula@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+                    <p>&copy; 2025 Jadula Trading Enterprise. All Rights Reserved.</p>
+                    <p class="mt-2">
+                        <a href="#" class="hover:text-secondary transition">Privacy Policy</a> | 
+                        <a href="#" class="hover:text-secondary transition">Terms & Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
